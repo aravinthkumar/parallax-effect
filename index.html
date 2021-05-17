@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Moon Light Parallax Effects | Vanilla Javascrip</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <section>
@@ -10,6 +10,23 @@
       <img src="moon.png" id="moon" />
       <img src="mountain.png" id="mountain" />
       <img src="road.png" id="road" />
+      <h4 id="text">Happy Birthday Darshini</h4>
     </section>
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+
+      window.addEventListener("scroll", function () {
+        var value = window.scrollY;
+        bg.style.top = value * 0.5 + "px";
+        moon.style.left = -value * 0.5 + "px";
+        mountain.style.top = -value * 0.15 + "px";
+        road.style.top = value * 0.15 + "px";
+        text.style.top = value * 1 + "px";
+      });
+    </script>
   </body>
 </html>
