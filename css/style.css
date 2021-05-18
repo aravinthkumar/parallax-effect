@@ -55,3 +55,18 @@ section img {
 #road {
   z-index: 2;
 }
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #0a2a43;
+}
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.sec p {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
